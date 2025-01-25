@@ -118,7 +118,7 @@ class UsersController extends Controller
             } else {
                 return response()->json([
                     'success' => false,
-                    'message' => 'User Gagal Diupdate!',
+                    'message' => 'User tidak ditemukan!',
                     'status' => 400
                 ], 400);
             }
@@ -139,7 +139,7 @@ class UsersController extends Controller
         } else {
             return response()->json([
                 'success' => false,
-                'message' => 'User Gagal Dihapus!',
+                'message' => 'User tidak ditemukan!',
                 'status' => 400
             ], 400);
         }
